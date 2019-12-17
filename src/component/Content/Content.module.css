@@ -1,0 +1,15 @@
+.content{
+    grid-area: c;
+    background-color: #7280a79f;
+  }
+  .content img{
+    margin: 2%;
+    width: 95%;
+      
+  }
+  
+
+  .post {
+    margin: 2%;
+    color: #090a0a ;
+  }
