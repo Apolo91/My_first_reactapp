@@ -1,0 +1,16 @@
+.profile{
+    grid-area: c;
+    background-color: #7280a79f;
+  }
+ 
+.ava 
+ {
+   margin-left: 2%;
+ }
+
+.profile img{
+    margin: 2%;
+    width: 90%;
+    height: 40%;
+}
+  
