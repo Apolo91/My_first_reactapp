@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './component/Header/header';
 import Navbar from  './component/Navbar/Navbar';
-import Content from './component/Content/Content'
+import Profile from './component/Profile/Profile'
 
 
 const App = (props) => {
@@ -10,7 +10,7 @@ const App = (props) => {
     <div className="app-wrapper">
     <Header />
     <Navbar />
-    <Content />
+    <Profile />
     </div>
   );
 }
