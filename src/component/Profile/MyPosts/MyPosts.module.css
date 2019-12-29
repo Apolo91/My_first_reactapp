@@ -3,3 +3,7 @@
     color: #090a0a ;
 }
 
+.wrapper_post textarea {
+    width: 660px;
+    height: 60px;
+}

@@ -1,4 +1,36 @@
 .dialogs {
-  color: aqua;
+ display: grid;
+ grid-template-columns: 2fr 10fr;
 }
 
+.dialogsItems {
+  padding: 25px;
+}
+
+.messagesItems {
+  padding: 25px;
+}
+
+.dialog {
+  margin: 10px;
+}
+
+.message {
+  margin: 10px;
+}
+
+
+.dialog a:link{
+  text-decoration: none;
+  color: #fafaff;
+}
+
+.dialog a:visited {
+  text-decoration: none;
+  color: #1417cc;
+}
+
+.dialog a:active{
+  text-decoration: none;
+  color: #f5f115;
+}

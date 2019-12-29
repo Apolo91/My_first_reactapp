@@ -7,13 +7,13 @@
       list-style-type: none;
       margin: 0;
       padding: 0;
-      font-size: 40px; 
-      margin-left: 30px;
+      font-size: 35px; 
+      margin-left: 20px;
   }
   
   .nav ul li a:link, a:visited , a:active {
     text-decoration: none;
     color: #fafaff;
-    font-size: 20px;
+    font-size: 15px;
   }
   

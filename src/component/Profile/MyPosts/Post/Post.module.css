@@ -1,14 +1,17 @@
-.post {
- 
+.post { 
     color: #014e81 ;
+
+    margin: 10px;
 }
 
 .post img {
     width: 60px;
     height: 60px;
     border-radius: 50px;
+    padding: 10px;
 }
 
 .like {
+    padding: 10px;
     color: #7e11c7;
 }
