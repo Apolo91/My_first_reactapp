@@ -1,0 +1,17 @@
+  .friends {
+    color: #fafaff;
+    margin-top: 250px;
+    font-size: 30px; 
+    margin-left: 15px;
+    margin-bottom: 150px;
+  }
+
+
+.friends_wrap {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    color: #fafaff;
+    font-size: 25px;     
+  }
+
+

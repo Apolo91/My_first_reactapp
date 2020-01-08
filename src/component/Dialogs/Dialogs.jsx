@@ -9,14 +9,17 @@ const Dialogs = (props) => {
     let dialogs = props.state.DialogsData.map(d => <DialogItem name={d.name} id={d.id} />)
 
     let messages = props.state.MessageData.map(m => <Message message={m.message} />)
+    let AddMessage = () => alert('add message')
 
     return (
         <div className={s.dialogs}>
             <div className={s.dialogsItems}>
                 {dialogs}
-            </div>
+            </div>         
             <div className={s.messagesItems}>
-                {messages}
+            <textarea />
+            <button onClick={AddMessage}>Add message</button>
+            {messages}   
             </div>
         </div>
     );

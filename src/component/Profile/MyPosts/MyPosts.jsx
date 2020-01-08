@@ -6,17 +6,31 @@ import Post from "./Post/Post"
 
 const MyPosts = (props) => {
 
-    let Posts = props.state.map(p => <Post message={p.message} like={p.like} />)
+    let Posts = props.post.map(p => <Post message={p.message} like={p.like} />)
+
+    let NewPostElement = React.createRef();
+
+    let AddPost = () => {
+       
+        props.addPost();
+        
+    }
+
+    let onPostChange = () => {
+        let text = NewPostElement.current.value;
+        props.updatePostText(text);
+    }
 
     return (
         <div className={s.wrapper_post}>
             <h3>My posts</h3>
             <div>
-                <textarea name="" id="" cols="60" rows="6"></textarea>
-                <div><button>Add post</button></div>
+                <textarea  onChange={onPostChange} ref={NewPostElement} cols="60" rows="6" 
+                value={props.newPostText} />
+                <div><button onClick={AddPost}>Add post</button></div>
             </div>
             {Posts}
-         </div>
+        </div>
     );
 }
 
