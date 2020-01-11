@@ -9,3 +9,9 @@
     height: 10%;
 }
   
+@media screen and (max-width: 400px) {
+  .profile img {
+    width: 40%;
+    height: 10%;
+  }
+}
