@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Header from './component/Header/header';
 import Navbar from './component/Navbar/Navbar';
 import Profile from './component/Profile/Profile';
@@ -19,9 +19,9 @@ const App = (props) => {
         <div className="app-wrapper-content">
           <Route path='/Profile' render={()=><Profile 
           ProfilePage={props.state.ProfilePage} 
-          updatePostText={props.updatePostText}
-          addPost = {props.addPost}/>} />
-          <Route path='/Dialogs' render={() => <Dialogs state={props.state.DialogsPage} />} />
+          dispatch={props.dispatch}/>}
+        />
+          <Route path='/Dialogs' render={() => <Dialogs store={props.store} />} />
           <Route path='/Music' render={() => <Music/>} />
           <Route path='/News' render={() => <News/>} />
           <Route path='/Settings' render={() =><Settings/>} />
