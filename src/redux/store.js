@@ -18,7 +18,7 @@ let store = {
                 { id: 3, message: 'It\'s my first post', like: 49 },
                 { id: 4, message: 'It\'s my first post', like: 1 },
             ],
-            newPostText: "it-kamasutra.com"
+            newPostText: "Hi!"
         },
         DialogsPage: {
             DialogsData: [
@@ -33,9 +33,7 @@ let store = {
                 { id: 1, message: 'Hi!' },
                 { id: 2, message: 'How are you?' },
                 { id: 3, message: 'It\'s fine' },
-                { id: 4, message: 'Yo!' },
-                { id: 5, message: 'Yo!' },
-                { id: 6, message: 'Yo!' },
+               
             ],
             newMessageText: ""
 
@@ -63,4 +61,3 @@ let store = {
 }
 
 export default store;
-window.store = store;
