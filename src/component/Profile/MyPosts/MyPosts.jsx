@@ -12,7 +12,7 @@ const MyPosts = (props) => {
 
     let onAddPost = () => {
 
-        props.AddPost();
+        props.addPost();
 
     }
 
