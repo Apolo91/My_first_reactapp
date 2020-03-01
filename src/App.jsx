@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import Header from './component/Header/header';
+import HeaderContainer from './component/Header/headerContainer';
 import Navbar from './component/Navbar/Navbar';
 import Music from './component/Music/Music';
 import News from './component/News/News';
@@ -16,15 +16,15 @@ const App = (props) => {
   return (
     <BrowserRouter>
       <div className="app-wrapper">
-        <Header />
+        <HeaderContainer />
         <Navbar  />
         <div className="app-wrapper-content">
-          <Route path='/Profile' render={()=> <ProfileContainer /> } />
-          <Route path='/Dialogs' render={() => <DialogsContainer />} />
-          <Route path='/Music' render={() => <Music/>} />
-          <Route path='/News' render={() => <News/>} />
-          <Route path='/Users' render={() => <UsersContainer/>} />
-          <Route path='/Settings' render={() =><Settings/>} />
+          <Route path='/profile/:userId?' render={()=> <ProfileContainer /> } />
+          <Route path='/dialogs' render={() => <DialogsContainer />} />
+          <Route path='/music' render={() => <Music/>} />
+          <Route path='/news' render={() => <News/>} />
+          <Route path='/users' render={() => <UsersContainer/>} />
+          <Route path='/settings' render={() =><Settings/>} />
         </div>
       </div>
     </BrowserRouter>

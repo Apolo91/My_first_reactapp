@@ -7,12 +7,12 @@ const Navbar = (props) => {
     return (
         <nav className={s.nav}>
             <ul>
-                <li><NavLink to="/Profile">Profile</NavLink></li>
-                <li><NavLink to="/Dialogs">Messages</NavLink></li>
-                <li><NavLink to="/News">News</NavLink></li>
-                <li><NavLink to="/Music">Music</NavLink></li>
-                <li><NavLink to="/Settings">Settings</NavLink></li>
-                <li><NavLink to="/Users">Users</NavLink></li>
+                <li><NavLink to="/profile">Profile</NavLink></li>
+                <li><NavLink to="/dialogs">Messages</NavLink></li>
+                <li><NavLink to="/news">News</NavLink></li>
+                <li><NavLink to="/music">Music</NavLink></li>
+                <li><NavLink to="/settings">Settings</NavLink></li>
+                <li><NavLink to="/users">Users</NavLink></li>
 
             </ul>
             {/* <Friends state={props.state.Friends}/> */}
