@@ -3,7 +3,8 @@ import {connect} from 'react-redux';
 import Users from './Users';
 import { unfollow, follow, setCurrentPage, toogleFollowingProgress,getUsers} from '../../redux/users-reducer';
 import CircularIndeterminate from '../common/preloader/CircularIndeterminate';
-
+import { withAuthRedirect } from '../../Hoc/withAuthRedirect';
+import { compose } from 'redux';
 
 class UsersApiComponent extends React.Component {
 
@@ -42,4 +43,11 @@ let mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps,{follow, unfollow, setCurrentPage, toogleFollowingProgress,getUsers})(UsersApiComponent);
+export default compose(
+    withAuthRedirect,
+    connect(mapStateToProps,{follow, unfollow, setCurrentPage, toogleFollowingProgress,getUsers})  
+)(UsersApiComponent)
+
+
+
+// export default withAuthRedirect(connect(mapStateToProps,{follow, unfollow, setCurrentPage, toogleFollowingProgress,getUsers})(UsersApiComponent));
